@@ -1,5 +1,6 @@
 package com.springboot.first.app.service.impl;
 
+import com.springboot.first.app.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.springboot.first.app.model.Employee;
@@ -67,7 +68,7 @@ public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
             employeeRepository.deleteById(id);
         }else
         {
-            throw new RuntimeException("Employee not found with id "+id);
+            throw new ResourceNotFoundException("Employee","id",id);
         }
     }
     
