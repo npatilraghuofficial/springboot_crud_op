@@ -8,7 +8,7 @@ public class SpringbootFirstAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootFirstAppApplication.class, args);
-		System.out.println("om sai ram.....");
+		System.out.println("Spring Boot Application Started");
 	}
 
 }
